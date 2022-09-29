@@ -1,5 +1,4 @@
 <h4>install:</h4>
-
 <p>cd todo_list</p>
 <p>npm i</p>
 <p>npm run dev</p>
