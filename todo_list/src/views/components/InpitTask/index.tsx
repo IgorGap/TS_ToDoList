@@ -91,7 +91,7 @@ export const InputTask: React.FC<InputTaskProps> = ({
         aria-label='Remove'
         className={styles.inputTaskRemove}
         onClick={() => {
-          if (confirm("Are you sure")) {
+          if (confirm("Delete task. TasAre you sure?")) {
             onRemoved(id)
           }
         }}
