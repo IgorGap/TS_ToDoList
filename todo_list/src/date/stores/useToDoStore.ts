@@ -42,23 +42,6 @@ const getСurrentState = () => {
 export const useToDoStore = create<ToDoStore>(localStorageUpdate(
   devtools((set, get) => ({
     tasks: getСurrentState(),
-    // [
-    // {
-    //   id: 'text1',
-    //   title: 'Написать To Do List на Type Script',
-    //   createdAt: 123
-    // },
-    // {
-    //   id: 'text22',
-    //   title: 'Реализовать полный функционал по ТЗ',
-    //   createdAt: 1234
-    // },
-    // {
-    //   id: 'text223',
-    //   title: 'Погулять с собакой',
-    //   createdAt: 12345
-    // }
-    // ],
     createTask: (title) => {
       const { tasks } = get()
       const newTask = {
